@@ -4,6 +4,7 @@ import PostData from './components/PostDataSWR'
 import PostDataSWR from './components/PostData'
 import PostDataUseEffect from './components/PostDataUseEffect'
 import PostDataStatic from './components/PostDataStatic'
+import DataRendering from './components/DataRendering'
 
 
 // // If we wished to fetch the data in Pre-Rendered time, we can use getStaticProps() and throw props in Hom() function.
@@ -38,7 +39,8 @@ export default function Home(props) {
    <PostData /> <br /><br />
    <PostDataSWR /> <br /> <br />
    <PostDataUseEffect /> <br /><br />
-   <PostDataStatic post={props.staticPost}/>
+   <PostDataStatic post={props.staticPost}/> <br /> <br />
+   <DataRendering />
    </>
   )
 }

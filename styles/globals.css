@@ -11,6 +11,11 @@ a {
   text-decoration: none;
 }
 
+/* this added for DataRendering.js component */
+table.borderOne, table.borderOne tr, table.borderOne td, table.borderOne th {
+  border: 3px solid #fff;
+}
+
 * {
   box-sizing: border-box;
 }
