@@ -6,6 +6,8 @@ export default function PostDataUseEffect(props) {
     const [ post, setPost ] = useState();  // post state variable we'll update/store with the data fetched from API using useSWR
 
     const { data, error } = useSWR('https://jsonplaceholder.typicode.com/posts/1'); // fetching useSWR and stored in "data"
+
+    console.log('Here\'s PostDataUseEffect component')
     
     useEffect(() => {
         if(data) {
@@ -19,6 +21,7 @@ export default function PostDataUseEffect(props) {
     else if (post){
         return (  // displaying post?.userId and more because we set the data in setPost() on line 12
             <>
+            <h1>2.PostDataUseEffect component</h1>
               <strong>User ID:</strong> {post?.userId}<br />
               <strong>Title:</strong> {post?.title}<br />
               <strong>Body:</strong> {post?.body}<br />
