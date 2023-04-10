@@ -1,4 +1,4 @@
-import useSWR from 'swr';
+import useSWR from 'swr';  // do npm i swr in order to reach this library
 
 // define the "fetcher" function.  This Can also be defined globally using SWRConfig (https://swr.vercel.app/docs/global-configuration)
 
